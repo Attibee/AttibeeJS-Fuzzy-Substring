@@ -1,7 +1,6 @@
 # AttibeeJS Fuzzy Substring
 
-Used to create flexible configuration of classes including support for default
-values.
+Searches a haystack for all best possible matches of needle, returning their position and Levenshtein distance.
 
 ## Installation
 
