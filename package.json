@@ -1,0 +1,26 @@
+{
+  "name": "@attibee/fuzzy-substring",
+  "version": "0.1.0-alpha.0",
+  "description": "Searches a haystack for all best possible matches of needle, returning their position and Levenshtein distance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Attibee/AttibeeJS-Fuzzy-Substring.git"
+  },
+  "keywords": [
+    "levenshtein",
+    "fuzzy",
+    "string",
+    "search",
+    "match"
+  ],
+  "author": "Anthony Massie",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Attibee/AttibeeJS-Fuzzy-Substring/issues"
+  },
+  "homepage": "https://github.com/Attibee/AttibeeJS-Fuzzy-Substring#readme"
+}

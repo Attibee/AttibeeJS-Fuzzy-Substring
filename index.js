@@ -1,0 +1,1 @@
+export {default as FuzzySubstring} from './src/FuzzySubstring'
