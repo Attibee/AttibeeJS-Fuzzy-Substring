@@ -11,14 +11,13 @@ values.
 
 ```javascript
 var FuzzySubstring = require('@attibee/fuzzy-substring');
-
-var search = new FuzzySubstring();
-
 var needle = 'apple';
-var haystack = 'app1e potato apble';
+var haystack = 'app1e potato appIe';
 
-var results = search.getMatches(needle, haystack);
+//search haystack for needle
+var results = new FuzzySubstring().getMatches('apple', 'app1e potato apble');
 
+//output results
 for(let result of results) {
     var substring = haystack.substring(result.start, result.end);
     var distance = result.distance;
@@ -28,5 +27,5 @@ for(let result of results) {
 
 // Output:
 // Distance: 1  Match: app1e
-// Distance: 1  Match: apble
+// Distance: 1  Match: appIe
 ```
