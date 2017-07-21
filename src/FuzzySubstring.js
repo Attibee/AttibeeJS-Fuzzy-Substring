@@ -20,7 +20,7 @@
  * Fuzzy searches a substring for all best matches of a search string
  * using Levenshtein distance.
  */
-export default class FuzzySubstring {
+class FuzzySubstring {
     /**
      * Calculates the Levenshtein distance for all substrings and returns their
      * distance and insertion-deletion offset.
@@ -105,7 +105,7 @@ export default class FuzzySubstring {
             let result = {
                 'distance': match[0],
                 'start': i - needle.length - match[1], //simplification of startPos = endPos − (needleLength + insertions − deletions)
-                'end': i - 1
+                'end': i
             }
             
             results.push(result);
@@ -115,3 +115,5 @@ export default class FuzzySubstring {
     }
     
 }
+
+module.exports = FuzzySubstring;

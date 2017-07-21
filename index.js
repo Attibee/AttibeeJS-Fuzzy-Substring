@@ -1,1 +1,1 @@
-export {default as FuzzySubstring} from './src/FuzzySubstring'
+module.exports = require('./src/FuzzySubstring')
